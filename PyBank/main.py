@@ -3,7 +3,7 @@ import os
 import csv
 from pdb import line_prefix
 
-csvpath = os.path.join("PyBank", "Resources", "budget_data.csv")
+csvpath = os.path.join("Resources", "budget_data.csv")
 
 
 profit_list = []
