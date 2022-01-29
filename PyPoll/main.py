@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join("Documents", "python-challenge", "PyPoll", "Resources1", "election_data.csv")
+csvpath = os.path.join("PyPoll", "Resources1", "election_data.csv")
 
 count = 0
 
