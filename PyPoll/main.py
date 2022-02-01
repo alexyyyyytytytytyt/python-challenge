@@ -43,15 +43,16 @@ with open(csvpath) as csvfile:
     print("-------------------------")
 
 if counter_Khan > c_correy and counter_Khan > li and counter_Khan > tooley:
-    print("Winner: Khan")
+    winner = "Khan"
+    
 if c_correy > counter_Khan and c_correy > li and c_correy > tooley:
-    print("Winner: Correy")
+    winner = "C_Correy"
 if li > c_correy and li > counter_Khan and li > tooley:
-    print("Winner: Li")
+    winner = "Li"
 if tooley > c_correy and tooley > li and tooley > counter_Khan:
-    print("Winner: O'Tooley")
+    winner = "O'Tooley"
 
-
+print("Winner: " + winner)
 output = os.path.join("Documents", "python-challenge", "PyPoll", "analysis", "PyPoll.txt")
 with open(output, "w") as analysis:
         analysis.write("Election Results" + "\n")
@@ -61,4 +62,6 @@ with open(output, "w") as analysis:
         analysis.write("Khan: " + str(khan_percent) + "% " + str(counter_Khan) + "\n")
         analysis.write("Li: " + str(li_percent) + "% " + str(li) + "\n")
         analysis.write("Correy: " + str(correy_percent) + "% " + str(c_correy) + "\n")
-        analysis.write("O'Tooley: " + str(tooley_percent) + "% " + str(tooley))
+        analysis.write("O'Tooley: " + str(tooley_percent) + "% " + str(tooley) + "\n")
+        analysis.write("---------------------------------" + "\n")
+        analysis.write("Winner: " + winner)
