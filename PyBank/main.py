@@ -3,7 +3,7 @@ import os
 import csv
 from pdb import line_prefix
 
-csvpath = os.path.join("Resources", "budget_data.csv")
+csvpath = os.path.join("Documents", "python-challenge", "PyBank", "Resources", "budget_data.csv")
 
 
 profit_list = []
@@ -42,6 +42,15 @@ with open(csvpath) as csvfile:
 
     print("Greatest Increase in Profits:", str(max_month), '$' + str(max_change))
     print("Greatest Decrease in Profits:", str(min_month), "$" +  str(min_change))
+
+    output = os.path.join("Documents", "python-challenge", "PyBank", "analysis", "budget_data.txt")
+    with open(output, "w") as analysis:
+        analysis.write("Financial Analysis" + "\n")
+        analysis.write("---------------------------------" + "\n")
+        analysis.write("Total Months: " + str(sum_months) + "\n")
+        analysis.write("Total: " + "$" + str(total) + "\n")
+        analysis.write("Greatest Increase in Profits: " + str(max_month) +  "$" + str(max_change) + "\n")
+        analysis.write("Greatest Decrease in Profits: " + str(min_month) +  "$" + str(min_change))
 
 
 
