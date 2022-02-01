@@ -49,8 +49,8 @@ with open(csvpath) as csvfile:
         analysis.write("---------------------------------" + "\n")
         analysis.write("Total Months: " + str(sum_months) + "\n")
         analysis.write("Total: " + "$" + str(total) + "\n")
-        analysis.write("Greatest Increase in Profits: " + str(max_month) +  "$" + str(max_change) + "\n")
-        analysis.write("Greatest Decrease in Profits: " + str(min_month) +  "$" + str(min_change))
+        analysis.write("Greatest Increase in Profits: " + str(max_month) + " $" + str(max_change) + "\n")
+        analysis.write("Greatest Decrease in Profits: " + str(min_month) + " $" + str(min_change))
 
 
 
