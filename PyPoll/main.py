@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join("Documents", "python-challenge", "PyPoll", "Resources1", "election_data.csv")
+csvpath = os.path.join("Desktop", "python-challenge", "PyPoll", "Resources1", "election_data.csv")
 
 count = 0
 
@@ -53,7 +53,7 @@ if tooley > c_correy and tooley > li and tooley > counter_Khan:
     winner = "O'Tooley"
 
 print("Winner: " + winner)
-output = os.path.join("Documents", "python-challenge", "PyPoll", "analysis", "PyPoll.txt")
+output = os.path.join("Desktop", "python-challenge", "PyPoll", "analysis", "PyPoll.txt")
 with open(output, "w") as analysis:
         analysis.write("Election Results" + "\n")
         analysis.write("---------------------------------" + "\n")
